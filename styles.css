@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -63,9 +63,6 @@
 }
 .menu-list li a:hover{
   color: #007bff;
-}
-.banner{
-  height: 50vh;
 }
 .icon{
   color: #fff;
@@ -145,6 +142,156 @@
 	font-size: 1.25em;
 	margin-top: 0.25em;
 }
+
+.well {
+  display: flex;
+  padding-top: 180px;
+  background-color: #F4F9FD;
+  justify-content: center;
+  gap: 170px;
+}
+.well p {
+  font-weight: 500;
+}
+.well button {
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.doc1 {
+  height: 70vh;
+  margin-left: 50px;
+}
+
+.our {
+  color: #1370B5;
+  font-size: 20px;
+  font-weight: bold;
+}
+.we {
+  color: #25304C;
+  font-size: 45px;
+}
+.about {
+  background-color: #1370B5;
+  color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.serve {
+  background-color: white;
+  color: #1370B5;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.med {
+ padding-top: 80px;
+ padding-bottom: 50px;
+}
+.real {
+  padding-bottom: 30px;
+}
+.quality {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.quality img {
+  height: 10vh;
+  margin-bottom: 20px;
+}
+.quality1 {
+  background-color: white;
+  background-image: url(./assets/pattern-1.png);
+  background-size: cover;
+  padding: 40px;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-top: -30px;
+  margin-bottom: 100px;
+}
+.quality h3 {
+  padding-bottom: 20px;
+}
+.research {
+  display: flex;
+  justify-content: space-around;
+}
+.researchImg {
+  background-image: url(./assets/pattern-1.png);
+}
+.medical {
+  padding-top: 80px;
+}
+.medical h5 {
+  padding-bottom: 20px;
+  font-size: 27px;
+  font-weight: lighter;
+}
+.medical h2 {
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+.medical p {
+  padding-bottom: 20px;
+}
+.medical button {
+  background-color: #1370B5;
+  color: white;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.health {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+.care {
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 100px;
+  background-image: url(./assets/pattern-1.png);
+}
+.care h2 {
+  font-size: 35px;
+}
+.care h5 {
+  padding-bottom: 20px;
+  font-size: 27px;
+  font-weight: lighter;
+}
+.allserve {
+  background-color: #F5F5F5;
+}
+.check {
+  padding: 40px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px; 
+}
+.check:hover{
+  background-color: white;
+  border-bottom: 5px solid #1370B5;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.check h4 {
+  font-size: 25px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+
+
 
 
 
