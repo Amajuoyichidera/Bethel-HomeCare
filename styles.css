@@ -29,10 +29,11 @@
   z-index: 2;
   padding: 25px 0;
   transition: all 0.3s ease;
-  background-color: #DBE0E3;
+  background-color: #1370B5;
 }
 .navbar.sticky{
-  background: white;
+  /* background: white;
+  color: blue; */
   padding: 10px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -54,7 +55,7 @@
   list-style: none;
 }
 .menu-list li a{
-  color: black;
+  color: white;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -96,15 +97,20 @@
 
 .image__img {
 	display: block;
-	width: 100%;
+	width: 50vh;
+  height: 80vh;
+  border: 10px solid white;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
 }
 
 .image__overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 50vh;
+	height: 80vh;
 	background: rgba(0, 0, 0, 0.6);
 	color: #ffffff;
 	font-family: 'Quicksand', sans-serif;
@@ -114,6 +120,8 @@
 	justify-content: center;
 	opacity: 0;
 	transition: opacity 0.25s;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .image__overlay--blur {
@@ -253,8 +261,9 @@
 .health {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
   text-align: center;
+  padding-bottom: 50px;
 }
 .care {
   text-align: center;
@@ -277,86 +286,129 @@
   padding: 40px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px; 
-}
-.check:hover{
+  transition: transform ease 300ms;
+  cursor: pointer;
   background-color: white;
   border-bottom: 5px solid #1370B5;
   transition: 0.5s ease-in-out;
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+  margin-bottom: 20px;
+}
+.check:hover{
+  transform:  translate(0, -30px);
 }
 .check h4 {
   font-size: 25px;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-
-
-
-
-
-
-@media (max-width: 1230px) {
-  .content{
-    padding: 0 60px;
-  }
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 25px;
 }
-@media (max-width: 1100px) {
-  .content{
-    padding: 0 40px;
-  }
+.dedicated {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
-@media (max-width: 900px) {
-  .content{
-    padding: 0 30px;
-  }
+.dedicated h2 {
+  font-size: 35px;
 }
-@media (max-width: 868px) {
-  body.disabled{
-    overflow: hidden;
-  }
-  .icon{
-    display: block;
-    color: black;
-  }
-  .icon.hide{
-    display: none;
-  }
-  .navbar .menu-list{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    max-width: 400px;
-    left: -100%;
-    top: 0px;
-    display: block;
-    padding: 40px 0;
-    text-align: center;
-    background: #222;
-    transition: all 0.3s ease;
-  }
-  .navbar.show .menu-list{
-    left: 0%;
-  }
-  .navbar .menu-list li{
-    margin-top: 45px;
-  }
-  .navbar .menu-list li a{
-    font-size: 23px;
-    margin-left: -100%;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .navbar.show .menu-list li a{
-    margin-left: 0px;
-  }
-  .menu-list li a{
-    color: #fff;
-  }
+.dedicated h5 {
+  padding-bottom: 20px;
+  font-size: 27px;
+  font-weight: lighter;
 }
-@media (max-width: 380px) {
-  .navbar .logo a{
-    font-size: 27px;
-  }
+.docTeam {
+  background-color: #F5F5F5;
+  padding-top: 20px;
+  padding-bottom: 150px;
 }
+.need {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1370B5;
+  color: white;
+}
+.checkUp {
+  padding-top: 200px;
+}
+.checkUp h4 {
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.checkUp h1 {
+  font-size: 27px;
+}
+.checkUp button {
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #1370B5;
+  background-color: white;
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+}
+.experience {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+}
+.happy {
+  text-align: center;
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+.happy p {
+  font-size: 20px;
+}
+.happy h3 {
+  font-size: 30px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1370B5;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+figure {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+footer p {
+  padding-top: 20px;
+}
+.chat {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+.quick {
+  padding-top: 100px;
+}
+
+
+
+
+
+
+
+
 
 
 .wrapper {
@@ -430,3 +482,78 @@ button#prev {
     font-size: 14px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    color: black;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+  .menu-list li a{
+    color: #fff;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
