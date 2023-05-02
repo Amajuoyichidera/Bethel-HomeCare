@@ -357,6 +357,9 @@
   background-color: white;
   box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
 }
+.checkLink {
+  text-decoration: none;
+}
 .experience {
   display: flex;
   justify-content: space-around;
