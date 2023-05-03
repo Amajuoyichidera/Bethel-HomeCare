@@ -640,6 +640,7 @@ button#prev {
 .search {
   height: 45vh;
   object-fit: cover;
+  margin-left: 20px;
 }
 .medical {
   padding-top: 10px;

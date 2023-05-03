@@ -478,7 +478,7 @@ footer {
     }
     .icon{
       display: block;
-      color: black;
+      color: white;
     }
     .icon.hide{
       display: none;
@@ -517,5 +517,36 @@ footer {
   @media (max-width: 380px) {
     .navbar .logo a{
       font-size: 27px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    figure {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    footer p {
+      padding-top: 20px;
+    }
+    .chat {
+      display: flex;
+      gap: 20px;
+      padding-top: 20px;
+    }
+    .quick {
+      padding-top: 50px;
+    }
+    .container {
+      padding-top: 180px;
+      padding-bottom: 50px;
     }
   }
