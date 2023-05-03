@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
+  scroll-behavior: smooth;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -637,7 +638,8 @@ button#prev {
   flex-direction: column;
 }
 .search {
-  height: 55vh;
+  height: 45vh;
+  object-fit: cover;
 }
 .medical {
   padding-top: 10px;
