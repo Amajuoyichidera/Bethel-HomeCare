@@ -567,7 +567,7 @@ button#prev {
 
 @media (max-width: 768px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 .well {
   padding-top: 80px;
