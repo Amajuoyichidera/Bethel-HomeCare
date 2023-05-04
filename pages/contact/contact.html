@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -33,7 +34,7 @@
       </nav>
 
 
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="2000">
       <span class="big-circle"></span>
       <img src="img/shape.png" class="square" alt="" />
       <div class="form">
@@ -121,7 +122,7 @@
 
      <footer>
 
-        <section>
+        <section data-aos="zoom-in" data-aos-duration="2000">
           <img src="/assets/logo.png" alt="">
           <p>Our Clinic has grown to provide a world class <br> facility for the clinic advanced restorative.</p>
           <p>We are among the most qualified implant <br> providers in the AUS with over 30  years <br> of quality training and experience.</p>
@@ -133,7 +134,7 @@
           </figure>
         </section>
 
-        <section class="quick">
+        <section class="quick" data-aos="zoom-in" data-aos-duration="2000">
           <h4>Quick Links</h4>
           <p>About Us</p>
           <p>Services</p>
@@ -143,7 +144,7 @@
 
         
 
-        <section class="quick">
+        <section class="quick" data-aos="zoom-in" data-aos-duration="2000">
             <h4>Chat with us</h4>
 
             <section class="chat">
@@ -168,5 +169,9 @@
       </footer>
 
     <script src="./contact.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
